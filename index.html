@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Welcome to AniTerminal. Convert your all ideas to a realworld application. AniTerminal is devolop anything for you.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ani Terminal | Anirban Kundu</title>
+    <meta name="keywords" content="AniTerminal, Anirban Kundu, Ani_terminal,Anirban Site,Terminal,New terminal,Developer nera by me,Ani Devs,Anirban Creation,Anirban Terminal, Developer">
+    <link rel="icon" type="image/x-icon" href="image/logo2.ico">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta property="og:title" content="AniTerminal">
+    <meta property="og:description" content="Create any thing with ani terminal...">
+    <meta property="og:image" content="https://example.com/image.jpg">
+    <meta property="og:url" content="https://example.com">
+    <meta property="og:type" content="website">
+
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Khula:700);
+
+        body {
+            background: #111;
+        }
+
+        .hidden {
+            opacity: 0;
+        }
+        .hero{
+            background-color: #111;
+            height: 100vh;
+        }
+
+        .console-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            
+
+            font-family: Khula;
+            font-size: 4em;
+            text-align: center;
+            /* height:200px; */
+            /* width:600px; */
+            display: block;
+            /* position:relative; */
+            color: white;
+            /* top:0; */
+            /* bottom:0; */
+            /* left:0; */
+            /* right:0; */
+            margin: auto;
+        }
+
+        .console-underscore {
+            display: inline-block;
+            position: relative;
+            top: -0.14em;
+            left: 10px;
+        }
+        nav{
+            opacity: 0.5;
+            z-index: 99999;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+        .about{
+            height: 100vh;
+        }
+        .about>.container{
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        #projects {
+            padding-top: 15%;
+        }
+    </style>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body class="bg-gray-100 font-sans">
+
+    <!-- Navigation -->
+    <nav class="bg-gray-900 py-4">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-center"> <!-- Changed justify-between to justify-center -->
+                <ul class="flex space-x-4">
+                    <li><a href="#home" class="text-white hover:text-green-300">Home</a></li>
+                    <li><a href="#about" class="text-white hover:text-gray-300">About</a></li>
+                    <li><a href="#projects" class="text-white hover:text-gray-300">Projects</a></li>
+                    <li><a href="#contact" class="text-white hover:text-gray-300">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class='console-container'><span id='text'></span>
+            <div class='console-underscore' id='console'>&#95;</div>
+        </div>
+    </section>
+    <!-- about section -->
+    <section data-aos="fade-up" class="py-22 bg-white about" id="about">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl font-semibold text-gray-800 mb-4">About Us</h2>
+                <p class="text-lg text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Ut euismod est nec turpis feugiat, nec facilisis nisi lacinia. Quisque quis quam nec est finibus gravida sed sit amet eros.</p>
+                <p class="text-lg text-gray-600 mt-4">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla facilisi. Aliquam volutpat nisi vitae mi lacinia, ac faucibus nulla vehicula. Sed vehicula leo id ipsum dignissim scelerisque.</p>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <!-- Projects Section -->
+    <section data-aos="fade-up" class="py-16" id="projects">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8">Featured Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://play-lh.googleusercontent.com/ZXSX1uWAg7avSejaeLhgNiyceOFgifQF1xmowBREJ7Py_etFc3W9OBzhHO5UH0jO4pxZ=w240-h480-rw" alt="Project 1" class="w-full h-64 object-cover object-center">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">WB Food SI Exam Preparation</h3>
+                        <p class="text-green-600"><b>FastStudy</b></p>
+                        <a href="https://play.google.com/store/apps/details?id=com.faststudy.foodsipre">Explore</a>
+                    </div>
+                </div>
+                <!-- Project Card -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://play-lh.googleusercontent.com/45kECiMf8CAIy2HzY2IdqUZib4iYC-pQOlwGrbN6qXoFjg5ngx8KVxTl7Ez0FhjJcewp=w240-h480-rw" alt="Project 2" class="w-full h-64 object-cover object-center">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Job Updates</h3>
+                        <p class="text-green-600"><b>FastStudy</b></p>
+                        <a href="https://play.google.com/store/apps/details?id=com.faststudy.wbjobsnews">Explore</a>
+                    </div>
+                </div>
+                <!-- Project Card -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://play-lh.googleusercontent.com/QLrntHDGHlGquKaevV3T4NRwoR-fB_MlsaCQ0pbq7WYVzsxhUmdwAzv5yF9GNMIn_C0=w240-h480-rw" alt="Project 3" class="w-full h-64 object-cover object-center">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">WBPSC Clerkship Preparation</h3>
+                        <p class="text-green-600"><b>FastStudy</b></p>
+                        <a href="https://play.google.com/store/apps/details?id=com.faststudy.clarkshipexam">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" data-aos="zoom-in" class="py-16 bg-gray-800 text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8">Contact Me</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <p class="text-lg mb-4">Have a project in mind or just want to say hi? Feel free to get in touch.
+                    </p>
+                    <p><strong>Email:</strong> contactanibhai@gmail.com</p>
+                    <!-- <p><strong>Phone:</strong> +123 456 7890</p> -->
+                    <p><strong>Address:</strong> In his address 😁</p>
+                </div>
+                <div>
+                    <form>
+                        <div class="mb-4">
+                            <label for="name" class="block mb-2">Your Name</label>
+                            <input type="text" id="name" name="name"
+                                class="w-full px-4 py-2 rounded-lg focus:outline-none focus:ring focus:border-blue-300">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block mb-2">Your Email</label>
+                            <input type="email" id="email" name="email"
+                                class="w-full px-4 py-2 rounded-lg focus:outline-none focus:ring focus:border-blue-300">
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="block mb-2">Your Message</label>
+                            <textarea id="message" name="message" rows="4"
+                                class="w-full px-4 py-2 rounded-lg focus:outline-none focus:ring focus:border-blue-300"></textarea>
+                        </div>
+                        <button type="submit" class="bg-blue-500 text-white py-2 px-6 rounded-lg hover:bg-blue-600">Send
+                            Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-gray-900 text-white text-center">
+        <p>&copy; 2024 Ani Terminal. All rights reserved.</p>
+    </footer>
+    <script>
+        AOS.init();
+        // function([string1, string2],target id,[color1,color2])    
+        consoleText(['Welcome Ani Terminal', 'Develop your Idae', 'Make your drema becomes true.','Android apps','Wordpress','Web Apps'], 'text', ['tomato', 'rebeccapurple', 'lightblue','blueviolet']);
+
+        function consoleText(words, id, colors) {
+            if (colors === undefined) colors = ['#fff'];
+            var visible = true;
+            var con = document.getElementById('console');
+            var letterCount = 1;
+            var x = 1;
+            var waiting = false;
+            var target = document.getElementById(id)
+            target.setAttribute('style', 'color:' + colors[0])
+            window.setInterval(function () {
+
+                if (letterCount === 0 && waiting === false) {
+                    waiting = true;
+                    target.innerHTML = words[0].substring(0, letterCount)
+                    window.setTimeout(function () {
+                        var usedColor = colors.shift();
+                        colors.push(usedColor);
+                        var usedWord = words.shift();
+                        words.push(usedWord);
+                        x = 1;
+                        target.setAttribute('style', 'color:' + colors[0])
+                        letterCount += x;
+                        waiting = false;
+                    }, 1000)
+                } else if (letterCount === words[0].length + 1 && waiting === false) {
+                    waiting = true;
+                    window.setTimeout(function () {
+                        x = -1;
+                        letterCount += x;
+                        waiting = false;
+                    }, 1000)
+                } else if (waiting === false) {
+                    target.innerHTML = words[0].substring(0, letterCount)
+                    letterCount += x;
+                }
+            }, 120)
+            window.setInterval(function () {
+                if (visible === true) {
+                    con.className = 'console-underscore hidden'
+                    visible = false;
+
+                } else {
+                    con.className = 'console-underscore'
+
+                    visible = true;
+                }
+            }, 400)
+        }
+    </script>
+
+</body>
+
+</html>
